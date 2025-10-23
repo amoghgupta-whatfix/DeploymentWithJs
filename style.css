@@ -1,0 +1,98 @@
+/* --- Global Styles & Body/Background --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6; /* Light gray background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    min-height: 100vh;       /* Full viewport height */
+    margin: 0;
+}
+
+/* --- Container for the Form --- */
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 400px; /* Max width to keep it readable */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* --- Grouping for Inputs and Labels --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block; /* Makes the label take its own line */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* --- Styling for all Input Fields (Text, Email, Password) --- */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width/height */
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+/* Focus effect */
+input:focus {
+    border-color: #007bff; /* Primary color border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* --- Checkbox Group Styling --- */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    font-weight: normal; /* Override bold for regular text in the checkbox label */
+    margin-left: 8px; /* Space between the checkbox and the label text */
+    display: inline;
+}
+
+.checkbox-group a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+/* --- Button Styling --- */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Green color for Sign Up */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e7e34; /* Darker green on hover */
+}
